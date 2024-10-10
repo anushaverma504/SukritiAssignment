@@ -84,3 +84,11 @@ npm start
 
 ### 9.Open browser and paste the given link
 http://localhost:3000/
+
+
+## Notes
+- Make sure your MongoDB service is running before starting the backend.
+- If using a cloud instance of MongoDB, update the connection string in your `.env` file accordingly.
+
+This README file provides users with a comprehensive guide to clone, install, and run your application. If you have any specific requests or need further adjustments, feel free to ask!
+
