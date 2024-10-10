@@ -42,3 +42,45 @@ This project is a full-stack user management application with a **ReactJS** fron
 ```bash
 git clone https://github.com/anushaverma504/SukritiAssignment.git
 cd .\SukritiAssignment\
+```
+
+### 2. Navigate to the backend directory:
+
+```bash
+cd .\backend\
+```
+
+### 3. Install the required dependencies:
+
+```bash
+npm i
+```
+
+### 4.Start the backend service
+
+```bash
+npm start
+```
+
+### 5.Open another terminal for frontend (do not close the previous terminal)
+
+### 6. Navigate to the frontend directory:
+
+```bash
+cd .\frontend\
+```
+
+### 7. Install the required dependencies:
+
+```bash
+npm i
+```
+
+### 8.Start the frontend
+
+```bash
+npm start
+```
+
+### 9.Open browser and paste the given link
+http://localhost:3000/
