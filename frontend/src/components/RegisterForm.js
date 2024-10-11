@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { registerUser } from '../features/authSlice';
 import { useNavigate } from 'react-router-dom';
+import '../styles/RegisterForm.css';
 
 const RegisterForm = () => {
   const [username, setUsername] = useState('');

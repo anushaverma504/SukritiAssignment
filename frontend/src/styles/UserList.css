@@ -1,0 +1,111 @@
+
+.container {
+    width: 50px;                /* Reduced max-width for a smaller container */
+    margin: 20px auto;               /* Center the container with some top and bottom margin */
+    padding: 15px;                   /* Padding around the content */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;                   /* Use flexbox for alignment */
+    flex-direction: column;          /* Stack items vertically */
+    align-items: center;             /* Center items horizontally */
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 20px;                /* Slightly smaller font size */
+    margin-bottom: 15px;            /* Adjusted margin */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;                    /* Full width for the list */
+}
+
+li {
+    display: flex;                  /* Flex layout for horizontal alignment */
+    align-items: center;           /* Center items vertically */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 8px;                  /* Reduced padding */
+    margin-bottom: 8px;            /* Adjusted margin */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    width: 100%;                   /* Full width for list items */
+}
+
+li div {
+    flex-grow: 1;                   /* Allow the input area to grow */
+    display: flex;                  /* Flex layout for the input and buttons */
+    align-items: center;            /* Center items vertically */
+}
+
+input[type="text"], 
+input[type="password"] {
+    padding: 5px 8px;              /* Reduced padding */
+    margin-right: 10px;            /* Space between input and buttons */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;               /* Slightly smaller font size */
+    flex-grow: 1;                   /* Inputs take up available space */
+}
+
+.button-container {
+    display: flex;                  /* Align buttons horizontally */
+    justify-content: center;        /* Center buttons */
+    width: 10px;                   /* Full width for button container */
+}
+
+button {
+    background-color: #28a745;     /* Green for Save button */
+    color: white;
+    border: none;
+    padding: 5px 10px;             /* Reduced padding */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;               /* Slightly smaller font size */
+    margin-left: 5px;              /* Space between buttons */
+    width: 60px;                   /* Fixed width for buttons */
+}
+
+button:hover {
+    background-color: #218838;      /* Darker green on hover */
+}
+
+button:disabled {
+    background-color: #6c757d;      /* Grey for disabled state */
+    cursor: not-allowed;
+}
+
+/* Style for delete button */
+button.delete-btn {
+    background-color: #dc3545;      /* Red */
+}
+
+button.delete-btn:hover {
+    background-color: #c82333;       /* Darker Red on hover */
+}
+
+@media (max-width: 400px) {
+    /* Adjustments for smaller screens */
+    .container {
+        max-width: 100%;            /* Full width on small screens */
+        padding: 10px;              /* Less padding */
+    }
+
+    h2 {
+        font-size: 18px;            /* Smaller heading size */
+    }
+
+    button {
+        width: 100%;                /* Full width buttons on small screens */
+        margin-bottom: 5px;         /* Space between buttons */
+    }
+
+    input {
+        width: 100%;                /* Full width inputs on small screens */
+        margin-bottom: 5px;         /* Space below inputs */
+    }
+}
